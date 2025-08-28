@@ -1,5 +1,3 @@
-import React from 'react'
-
 function Navbar() {
   return (
     <header className="flex items-center justify-between whitespace-nowrap border-b border-solid border-b-[#e7edf4] px-10 py-3">
@@ -12,14 +10,6 @@ function Navbar() {
               </div>
               <h2 className="text-[#0d141c] text-lg font-bold leading-tight tracking-[-0.015em]">StockPilot</h2>
             </div>
-            {/* <div className="flex items-center gap-9">
-              <a className="text-[#0d141c] text-sm font-medium leading-normal" href="#">Dashboard</a>
-              <a className="text-[#0d141c] text-sm font-medium leading-normal" href="#">Products</a>
-              <a className="text-[#0d141c] text-sm font-medium leading-normal" href="#">Orders</a>
-              <a className="text-[#0d141c] text-sm font-medium leading-normal" href="#">Customers</a>
-              <a className="text-[#0d141c] text-sm font-medium leading-normal" href="#">Vendors</a>
-              <a className="text-[#0d141c] text-sm font-medium leading-normal" href="#">Reports</a>
-            </div> */}
           </div>
           <div className="flex flex-1 justify-end gap-8">
             <label className="flex flex-col min-w-40 !h-10 max-w-64">
