@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import {Link} from "react-router-dom"
 import { 
   LayoutDashboard, 
   Package, 
@@ -115,6 +116,7 @@ const Sidebar = ({ isOpen = true, onToggle }) => {
       <nav className="flex-1 px-4 py-6">
         <div className="space-y-2">
           {menuItems.map((item) => (
+            <Link to={item.path}>
             <button
               key={item.id}
               onClick={() => setActiveItem(item.id)}
@@ -135,6 +137,7 @@ const Sidebar = ({ isOpen = true, onToggle }) => {
                 </span>
               )}
             </button>
+            </Link>
           ))}
         </div>
       </nav>
@@ -143,6 +146,7 @@ const Sidebar = ({ isOpen = true, onToggle }) => {
       <div className="px-4 py-4 border-t border-solid border-[#cedbe8]">
         <div className="space-y-2">
           {bottomMenuItems.map((item) => (
+            <Link to={item.path}>
             <button
               key={item.id}
               onClick={() => setActiveItem(item.id)}
@@ -163,6 +167,7 @@ const Sidebar = ({ isOpen = true, onToggle }) => {
                 </span>
               )}
             </button>
+            </Link>
           ))}
         </div>
       </div>
